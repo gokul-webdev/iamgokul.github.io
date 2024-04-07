@@ -219,7 +219,6 @@ span {
     transform: scale(1.02);
 }
 
-
 .skills-box i {
     font-size: 7rem;
     color: var(--main-color);
@@ -229,25 +228,25 @@ span {
     font-size: 2.8rem;
 }
 
-.projects {
+.achievements {
     background: var(--second-bg-color);
 }
 
-.projects h2 {
+.achievements h2 {
     margin-bottom: 4rem;
 }
 
-.projects-container {
-    height: 45rem;
+.achievements-container {
+    height: 48rem;
     display: grid;
     position: relative;
-    left: 25px;
+    left: 6rem;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 5rem;
+    gap: 1vw;
 }
 
-.projects-container .projects-box {
+.achievements-container .achievements-box {
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
@@ -255,27 +254,27 @@ span {
     display: flex;
 }
 
-.projects-box {
-    width: 88%;
+.achievements-box {
+    width: 80%;
+    height: 60%;
 }
 
-.projects-box img {
-    width: 35vw;
+.achievements-box img {
     transition: .5s ease;
 }
 
-.projects-box:hover img {
+.achievements-box:hover img {
     transform: scale(1.1);
 } 
 
-.projects-box .projects-layer {
+.achievements-box .achievements-layer {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0,0,0,.1), var(--main-color));
-    display: flex;;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -285,20 +284,20 @@ span {
     transition: .5s ease;
 }
 
-.projects-box:hover .projects-layer {
+.achievements-box:hover .achievements-layer {
     transform: translateY(0);
 }
 
-.projects-layer h4 {
+.achievements-layer h4 {
     font-size: 2rem;
 }
 
-.projects-layer p {
+.achievements-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1;
 }
 
-.projects-layer a {
+.achievements-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -308,9 +307,49 @@ span {
     border-radius: 50%;
 }
 
-.projects-layer a i {
+.achievements-layer a i {
     font-size: 2rem;
     columns: var(--second-bg-color);
+}
+
+.co-curricular_activities h2 {
+    margin-bottom: 3rem;
+}
+
+.co-curricular_activities-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.co-curricular_activities-container .co-curricular_activities-box {
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transform: .5s ease;
+}
+
+.co-curricular_activities-container .co-curricular_activities-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.co-curricular_activities-box i {
+    font-size: 6rem;
+    color: var(--main-color);
+}
+
+.co-curricular_activities-box p {
+    font-size: 2.0rem;
+}
+
+.co-curricular_activities-box h3 {
+    font-size: 2rem;
 }
 
 .contact h2 {
@@ -327,7 +366,7 @@ span {
 
 .contact-container .contact-box {
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -339,7 +378,6 @@ span {
     border-color: var(--main-color);
     transform: scale(1.02);
 }
-
 
 .contact-box i {
     font-size: 7rem;
@@ -359,13 +397,17 @@ span {
     font-size: 2rem;
 }
 
+.contact {
+    background-color: var(--second-bg-color);
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-iconTop a {
@@ -411,7 +453,11 @@ span {
     padding-bottom: 7rem;
    }
 
-   .projects {
+   .achievements {
+    padding-bottom: 7rem;
+   }
+
+   .co-curricular_activities {
     padding-bottom: 7rem;
    }
 
@@ -481,26 +527,30 @@ span {
         margin-bottom: 3rem;
     }
 
-    .projects h2 {
+    .achievements h2 {
         margin-bottom: 3rem;
     }
 
-    .projects-container {
+    .co-curricular_activities {
+        margin-bottom: 3rem;
+    }
+
+    .achievements-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 617px) {
-    .projects-container {
+    .achievements-container {
         grid-template-columns: 1fr
     }
 
-    .projects-box {
-        height: 23rem;
-        width: 88%;
+    .achievements-box {
+        height: 30rem;
+        width: 35%;
     }
 
-    .projects-box img {
+    .achievements-box img {
         width: 79vw;
         transition: .1s ease;
     }
@@ -529,6 +579,7 @@ span {
 @media screen and (max-width: 300px) {
     .home-img img {
         width: 35vw;
+    
     }
 
     .footer-iconTop {
