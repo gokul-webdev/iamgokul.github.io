@@ -255,7 +255,7 @@ span {
 }
 
 .achievements-box {
-    width: 80%;
+    width: 33vw;
     height: 60%;
 }
 
@@ -536,8 +536,22 @@ span {
     }
 
     .achievements-container {
+        display: inline;
+
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .achievements-box {
+        height: 30rem;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .achievements-box img {
+        width: 79vw;
+        transition: .1s ease;
+    }
+
 }
 
 @media screen and (max-width: 617px) {
@@ -547,7 +561,7 @@ span {
 
     .achievements-box {
         height: 30rem;
-        width: 35%;
+        width: 80%;
     }
 
     .achievements-box img {
